@@ -7,6 +7,16 @@ with a drop-in OpenAI-compatible REST endpoint at `localhost:11500`.
 ## Install
 
 ```sh
+brew install pavsefcik/ymlx/ymlx
+```
+
+That's all — works on any Homebrew version. Homebrew 6 trusts exactly this
+formula when you install it by fully-qualified name, so no separate tap/trust
+step is needed.
+
+If you'd rather have the short `ymlx` name (e.g. for `brew upgrade ymlx`):
+
+```sh
 brew trust pavsefcik/ymlx   # Homebrew 6+: trusts non-official taps; skip on older versions
 brew tap pavsefcik/ymlx
 brew install ymlx
