@@ -20,8 +20,10 @@ class Ymlx < Formula
 
   def install
     # Keep the full tree (ymlx.zsh sources lib/ymlx-helpers.zsh by relative
-    # path) under libexec, then expose a thin `ymlx` wrapper.
-    libexec.install Dir["*"]
+    # path) under libexec, then expose a thin `ymlx` wrapper. Exclude the repo's
+    # own ymlx-launcher.zsh: its brew-aware replacement is written below, and
+    # Homebrew refuses to overwrite files it already installed.
+    libexec.install Dir["*"] - ["ymlx-launcher.zsh"]
 
     (bin/"ymlx").write <<~EOS
       #!/usr/bin/env bash
