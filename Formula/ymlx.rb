@@ -45,6 +45,7 @@ class Ymlx < Formula
   test do
     assert_path_exists libexec/"ymlx.zsh"
     assert_path_exists libexec/"lib/ymlx-helpers.zsh"
+    assert_path_exists libexec/"lib/ymlx_repl.py"
     assert_path_exists bin/"ymlx"
   end
 end
