@@ -1,8 +1,8 @@
 class Ymlx < Formula
   desc "Local MLX LLM manager, OpenAI-compatible API on :11500"
   homepage "https://github.com/pavsefcik/ymlx"
-  url "https://github.com/pavsefcik/ymlx/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "dce39cc5666f36724601566445c139776de962e6f3f4965f63ab2a14d6150687"
+  url "https://github.com/pavsefcik/ymlx/archive/refs/tags/v0.131.0.tar.gz"
+  sha256 "9ff379d0139714d7d6923d3f466ade2362a9cd33e53712081e04c80e0c713526"
   license "MIT"
 
   # SHA256 is for the current `main` tree. After tagging a release run
